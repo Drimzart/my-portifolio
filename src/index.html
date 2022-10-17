@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="global.css" />
+    <title>K | M</title>
+  </head>
+  <body class="bg-primary w-full h-full font-Prompt text-white">
+    <div class="container max-w-screen-2x1 m-auto shadow-xl shadow-white">
+      <header
+        id="header"
+        class="bg-primary flex justify-between items-center max-w-screen-2xl pl-16 pr-16"
+      >
+        <div>
+          <h1 class="text-xl font-bold hover:text-secundary">K | M</h1>
+        </div>
+        <nav
+          id="nav"
+          class="fixed top-6 bottom-0 w-52 md:w-auto md:static transition-all"
+        >
+          <ul
+            class="hidden md:flex justify-between items-center pr-16 text-base font-semibold cursor-pointer"
+          >
+            <li class="hover:bg-secundary py-4 px-6">
+              <a href="#home">Home</a>
+            </li>
+            <li class="hover:bg-secundary py-4 px-6">
+              <a href="#about">Sobre</a>
+            </li>
+            <li class="hover:bg-secundary py-4 px-6">
+              <a href="#project">Projetos</a>
+            </li>
+            <li class="hover:bg-secundary py-4 px-6">
+              <a href="#expirence">Experiencias</a>
+            </li>
+          </ul>
+          <div class="flex md:hidden">
+            <button
+              class="py-3 px-4 mx-2 rounded focus:outline-none hover:bg-secundary mobile-menu-button"
+              id="toggle"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden mobile-menu md:hidden">
+            <ul class="text-base font-semibold cursor-pointer">
+              <li class="hover:bg-secundary py-4 px-6 block">
+                <a href="#home">Home</a>
+              </li>
+              <li class="hover:bg-secundary py-4 px-6 block">
+                <a href="#about">Sobre</a>
+              </li>
+              <li class="hover:bg-secundary py-4 px-6 block">
+                <a href="#project">Projetos</a>
+              </li>
+              <li class="hover:bg-secundary py-4 px-6 block">
+                <a href="#expirence">Experiencias</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main class="flex flex-col items-center">
+        <section
+          class="p-16 flex flex-wrap justify-between items-center bg-primary"
+          id="home"
+        >
+          <div class="">
+            <h1 class="text-6xl font-bold">Web Developer Junior</h1>
+            <p>
+              Olá, meu nome é Kaio Murillo e esse é meu portifolio, espero que
+              goste e tenha uma boa expêriencia.
+            </p>
+
+            <button
+              class="relative px-7 py-4 bg-gradient-to-r from-third to-four rounded-lg leading-none flex items-center mt-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300 border border-white"
+            >
+              <span class="flex items-center font-semibold">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+                <div class="ml-2">Github</div>
+              </span>
+            </button>
+          </div>
+          <div>
+            <img
+              class="max-w-xl m-auto"
+              src="./assets/programmer.png"
+              alt="programmer"
+            />
+          </div>
+        </section>
+
+        <section
+          class="bg-secundary grid grid-cols-2 items-center float-right"
+          id="about"
+        >
+          <div class="flex justify-center">
+            <div class="bg-gradient-to-y from-third via-secundary to-four b2">
+              <img
+                src="https://avatars.githubusercontent.com/u/92729892?v=4"
+                alt="avatar"
+              />
+            </div>
+          </div>
+          <div class="max-w-xl inline-block">
+            <h1 class="text-6xl font-bold mb-4 text-center">Sobre</h1>
+            <p class="text-5x1">
+              Sou criativo, auto motivado e fascinado por inovação. Estou sempre
+              em busca de conhecimentos que possibilitem expandir minhas áreas
+              de conhecimento. Consigo obter soluções para problemas com
+              facilidades e perceber oportunidades de negócios. Habilidades
+              interpessoais e conhecimento diversificado são os meus principais
+              diferenciais.
+            </p>
+          </div>
+        </section>
+
+        <section class="bg-primary p-16" id="project">
+          <div class="pb-7 max-w-x1">
+            <h1 class="text-6xl font-bold mb-4 text-center">Projetos</h1>
+            <p class="text-center">
+              Aqui apresento alguns dos projetos que realizei durante minha
+              jornada de estudos na
+              <span style="color: #9a4df7; font-weight: bold">Rocketseat</span>
+              ultilizando ferramentas como
+              <span style="color: #f7ef4d; font-weight: bold">Javascript</span>,
+              <span style="color: #1c4ef5; font-weight: bold">Typescript</span>
+              ,
+              <span style="color: #1ca9f5; font-weight: bold">React</span>,
+              <span style="color: #bd1e14; font-weight: bold">SCSS</span>,
+              <span style="color: #17e121; font-weight: bold">Tailwind</span>,
+              <span style="color: #f3f7f3; font-weight: bold">API</span>,
+              <span style="font-weight: bold">Next.js</span> dentre outras que
+              hoje formam a minha base de estudos continuo como desenvolvedor
+              front-end, todos os projetos estão disponiveis no meu
+              <span style="color: #464299; font-weight: bold">Github</span>.
+            </p>
+          </div>
+          <div class="gallery-container">
+            <a href="./assets/dtmoney.jpg" class="gallery-items">
+              <img src="./assets/dtmoney.jpg" alt="dtmoney" />
+            </a>
+            <a href="./assets/ignew.jpg" class="gallery-items">
+              <img src="./assets/ignew.jpg" alt="ignew" />
+            </a>
+            <a href="./assets/nlwesport.jpg" class="gallery-items">
+              <img src="./assets/nlwesport.jpg" alt="nlwesport" />
+            </a>
+            <a href="./assets/salon.jpg" class="gallery-items">
+              <img src="./assets/salon.jpg" alt="beatiful salon" />
+            </a>
+            <a href="./assets/todolist.jpg" class="gallery-items">
+              <img src="./assets/todolist.jpg" alt="todolist" />
+            </a>
+            <a href="./assets/devfinance.jpg" class="gallery-items">
+              <img src="./assets/devfinance.jpg" alt="devfinance" />
+            </a>
+          </div>
+        </section>
+
+        <section
+          class="bg-secundary p-16 text-center flex flex-col justify-center items-center"
+          id="expirence"
+        >
+          <div class="">
+            <h1 class="text-6xl font-bold mb-4">Minhas Experiências</h1>
+            <div class="flex justify-between items-center gap-5 mt-10">
+              <div>
+                <h2 class="font-bold text-4xl text-left">Minha caminhada</h2>
+                <p class="text-left">
+                  No ano de 2014, tive o meu primeiro contato o desenvolvimento
+                  web, aprendi um pouco de
+                  <span style="color: #f7b74d; font-weight: bold">HTML</span> e
+                  <span style="color: #4dbef7; font-weight: bold">CSS</span> de
+                  forma autodidata. Mas só em 2021, decidi focar na área e me
+                  tornei aluno da
+                  <span style="color: #9a4df7; font-weight: bold"
+                    >Rocketseat</span
+                  >, o que me posibilitou ter um conhecimento mais consolidado,
+                  este que utilizei na criação desse projeto que tem como
+                  objetivo evoluir de acordo as minhas habilidades.
+                </p>
+              </div>
+              <div>
+                <h2 class="font-bold text-4xl text-right">
+                  Experiências extras
+                </h2>
+                <p class="text-right">
+                  Fui responsável por realizar updates no banco de dados Oracle
+                  via PL/SQL, gerenciamento do ERP Winthor e criação/manutenção
+                  de servidores vituais via VMware.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-xl">
+            <img src="./assets/community.png" alt="community" />
+          </div>
+        </section>
+      </main>
+      <footer class="bg-primary p-16">
+        <div
+          class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"
+        >
+          <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+            <div class="px-5 py-2">
+              <a
+                href="#home"
+                class="text-base leading-6 text-gray-500 hover:text-white"
+              >
+                Home
+              </a>
+            </div>
+            <div class="px-5 py-2">
+              <a
+                href="#about"
+                class="text-base leading-6 text-gray-500 hover:text-white"
+              >
+                Sobre
+              </a>
+            </div>
+            <div class="px-5 py-2">
+              <a
+                href="#project"
+                class="text-base leading-6 text-gray-500 hover:text-white"
+              >
+                Projetos
+              </a>
+            </div>
+            <div class="px-5 py-2">
+              <a
+                href="#"
+                class="text-base leading-6 text-gray-500 hover:text-white"
+              >
+                Experiências
+              </a>
+            </div>
+          </nav>
+          <div class="flex justify-center mt-8 space-x-6">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/kaio-murillo-219807223/"
+              ><img
+                class="w-6 h-6"
+                src="./assets/linkedin.svg"
+                alt="linkedin logo"
+            /></a>
+
+            <a
+              href="https://web.whatsapp.com/send?phone=5575992112669"
+              class="text-gray-400 hover:text-gray-500"
+              target="_blank"
+            >
+              <img class="w-6 h-6" src="./assets/whatsapp.svg" alt="zapzap" />
+            </a>
+
+            <a
+              href="https://github.com/Drimzart"
+              class="text-gray-400 hover:text-gray-500"
+            >
+              <span class="sr-only">GitHub</span>
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <p class="mt-8 text-base leading-6 text-center text-gray-400">
+            © 2022 Kaio Murillo, Bahia - Brasil.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
